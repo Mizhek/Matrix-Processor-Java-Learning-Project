@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fb2d9456-b036-48ee-86ef-4f786f8f584e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/processor/Inversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/processor/Inversion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/processor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/processor/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/processor/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+            <state relative-caret-position="260">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -30,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/processor/Determinant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="219">
+              <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -48,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/processor/Inversion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="240">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -86,6 +85,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/processor/Inversion.java" />
+        <option value="$PROJECT_DIR$/src/processor/Determinant.java" />
         <option value="$PROJECT_DIR$/src/processor/Main.java" />
       </list>
     </option>
@@ -197,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559155419189</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed wrong output for inverse matrix.&#10;Added checking if matrices have proper sizes.">
+      <created>1559160177325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559160177327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -234,7 +241,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial upload" />
+    <MESSAGE value="Fixed wrong output for inverse matrix." />
+    <MESSAGE value="Fixed wrong output for inverse matrix.&#10;Added checking if matrices have proper sizes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed wrong output for inverse matrix.&#10;Added checking if matrices have proper sizes." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/Matrix-Processor-Java-Learning-Project/processor/Determinant.class">
@@ -248,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/processor/Inversion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -267,13 +276,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/processor/Determinant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/processor/InputOutput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -281,10 +283,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/processor/Determinant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/processor/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="113" column="21" lean-forward="true" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+        <state relative-caret-position="260">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
