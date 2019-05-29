@@ -1,3 +1,5 @@
 # Matrix-Processor-Java-Learning-Project
 
-![](demonstrarion.gif)
+Programm for processing matrices.
+
+![](demonstration.gif)
