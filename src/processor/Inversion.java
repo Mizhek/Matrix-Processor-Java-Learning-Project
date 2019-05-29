@@ -18,7 +18,6 @@ class Inversion {
                 matr[1][1] = temp;
                 InputOutput.printMatr(matr);
             } else {
-                System.out.println("The answer is: ");
                 cofactorMatr = MatrixTransposition.transposeMainDiag(Determinant.createCofactorMatr(matr));
                 inversedMatr = MatricesOperations.multiplyMatrToConstant(cofactorMatr, 1/determinant);
                 InputOutput.printMatr(MatricesOperations.roundMatrElements(inversedMatr));

@@ -27,6 +27,7 @@ public class Main {
         while (true) {
             switch (currentProcessorState) {
                 case CHOOSING_ACTION:
+                    System.out.println("\nPlease choose preferred action:");
                     System.out.println("1. Add matrices \n" +
                             "2. Multiply matrix to a constant \n" +
                             "3. Multiply matrices \n" +
@@ -43,8 +44,14 @@ public class Main {
                     firstMatr = InputOutput.createMatrFromInput();
                     System.out.print("Enter size of second matrix: ");
                     secondMatr = InputOutput.createMatrFromInput();
-                    InputOutput.printMatr(MatricesOperations.addMatrices(firstMatr, secondMatr));
-                    currentProcessorState = MatrProcessorStates.CHOOSING_ACTION;
+                    if (firstMatr.length != secondMatr.length || firstMatr[0].length != secondMatr[0].length) {
+                        System.out.println("Matrices with different sizes can't be added!\n " +
+                                "Please enter two new matrices with same size.");
+                        currentProcessorState = MatrProcessorStates.ADDING_MATRICES;
+                    } else {
+                        InputOutput.printMatr(MatricesOperations.addMatrices(firstMatr, secondMatr));
+                        currentProcessorState = MatrProcessorStates.CHOOSING_ACTION;
+                    }
                     break;
                 case MULTIPLYING_MATR_TO_CONSTANT:
                     System.out.print("Enter size of matrix: ");
@@ -59,10 +66,17 @@ public class Main {
                     firstMatr = InputOutput.createMatrFromInput();
                     System.out.print("Enter size of second matrix: ");
                     secondMatr = InputOutput.createMatrFromInput();
-                    InputOutput.printMatr(MatricesOperations.multiplyMatrices(firstMatr, secondMatr));
-                    currentProcessorState = MatrProcessorStates.CHOOSING_ACTION;
+                    if (firstMatr[0].length != secondMatr.length) {
+                        System.out.println("The number of columns in fist matrix must be equal to the number of rows in second matrix.\n" +
+                                "Please enter correct matrices:");
+                        currentProcessorState = MatrProcessorStates.MULTIPLYING_TWO_MATR;
+                    } else {
+                        InputOutput.printMatr(MatricesOperations.multiplyMatrices(firstMatr, secondMatr));
+                        currentProcessorState = MatrProcessorStates.CHOOSING_ACTION;
+                    }
                     break;
                 case TRANSPOSING_MATR:
+                    System.out.println("Choose preferred matrix transposition:");
                     System.out.println("1. Main diagonal \n" +
                             "2. Side diagonal \n" +
                             "3. Vertical line \n" +
@@ -95,7 +109,6 @@ public class Main {
                         currentProcessorState = MatrProcessorStates.CALCULATING_DETERMINANT;
                         break;
                     } else {
-                        System.out.println("The result is: \n");
                         Inversion.inverseMatr(firstMatr);
 
                     }

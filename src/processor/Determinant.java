@@ -27,7 +27,7 @@ class Determinant {
         return determinant;
     }
 
-    static double[][] createMinorMatr(double[][] matr, int row, int column) {
+    private static double[][] createMinorMatr(double[][] matr, int row, int column) {
         double[][] minor = new double[matr.length - 1][matr[0].length - 1];
         double[] tempAtrray = new double[minor.length * minor.length];
         int counter = 0;
